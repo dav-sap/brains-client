@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {checkForKeyOwnership} from "./utils/mint-key";
+import {checkForKeyOwnership} from "./../utils/mint-key";
 
 const useWallet = () => {
 	const [walletAddress, setWalletAddress] = useState('');

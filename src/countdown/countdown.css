@@ -1,0 +1,20 @@
+.countdown-timer {
+    height: 52px;
+    font-family: Azeret Mono, sans-serif;
+    font-size: 44px;
+    letter-spacing: -1.6px;
+    color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.time-frame-label {
+    width: 35px;
+    height: 16px;
+    font-family: Azeret Mono, sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}

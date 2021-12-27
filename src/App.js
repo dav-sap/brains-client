@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import Countdown from './countdown/Countdown';
+import useWallet from "./wallet/useWallet";
+import WalletButtons from './wallet-buttons/wallet-buttons';
+import KeyButton from "./key-button/key-button";
+import Quests from "./quests/quests";
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const {setWalletAddress, walletAddress, hasKey, setHasKey} = useWallet();
+    
+    return (
+        <div className="App">
+            <Countdown />
+            <WalletButtons walletAddress={walletAddress} setWalletAddress={setWalletAddress} />
+            {hasKey === false && walletAddress ? <KeyButton setHasKey={setHasKey} /> : ''}
+            {hasKey ? (
+                <Quests />
+            ) : ''}
+            </div>
+    );
+};
 
 export default App;

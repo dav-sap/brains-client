@@ -1,0 +1,11 @@
+.key-btn {
+    margin: 20px 0 0;
+    padding: 20px 40px 20px 40px;
+    border-radius: 50px;
+    border: solid 2px #e5ff00;
+    color: #ebebeb;
+    font-family: Azeret Mono;
+    cursor: pointer;
+    background-color: #141414;
+    background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.08), rgba(216, 216, 216, 0));
+}

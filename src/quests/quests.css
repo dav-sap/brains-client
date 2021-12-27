@@ -1,0 +1,26 @@
+.quests-container {
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+.quests-options {
+    display: flex;
+    justify-content: center;
+}
+.quest {
+    color: #ebebeb;
+    margin-left: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.quests-title {
+    font-size: 50px;
+    margin-bottom: 24px;
+}
+.quest .title {
+    margin-bottom: 16px;
+}
+.quest img {
+    width: 128px;
+    height: 140px;
+}
